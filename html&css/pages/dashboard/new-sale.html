@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Western Farm - New Sale Page</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="../../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Sweet Alert -->
+  <link type="text/css" href="../../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- Notyf -->
+  <link type="text/css" href="../../vendor/notyf/notyf.min.css" rel="stylesheet">
+
+  <!-- Volt CSS -->
+  <link type="text/css" href="../../css/volt.css" rel="stylesheet">
+  <link type="text/css" href="../../vendor/autocomplete/autocomplete.min.css" rel="stylesheet">
+
+  <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+    <a class="navbar-brand me-lg-5" href="../../index.html">
+      <img class="navbar-brand-dark" src="../../assets/img/brand/light.svg" alt="Volt logo" /> <img
+        class="navbar-brand-light" src="../../assets/img/brand/dark.svg" alt="Volt logo" />
+    </a>
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+      <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+        <div class="d-flex align-items-center">
+          <div class="avatar-lg me-4">
+            <img src="../../assets/img/team/default-avatar.jpg" class="card-img-top rounded-circle border-white"
+              alt="User Avatar">
+          </div>
+          <div class="d-block">
+            <h2 class="h5 mb-3">Hi, Jane</h2>
+            <a href="../../../../pages/examples/sign-in.html"
+              class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+              <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                </path>
+              </svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+        <div class="collapse-close d-md-none">
+          <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+            aria-expanded="true" aria-label="Toggle navigation">
+            <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <ul class="nav flex-column pt-3 pt-md-0">
+        <li class="nav-item mt-4">
+          <span class="sidebar-icon">
+            <img src="../../assets/img/brand/light.svg" height="20" width="20" alt="Company Logo">
+          </span>
+          <span class="mt-1 ms-4 sidebar-text">Western Overview</span>
+        </li>
+        <li role="separator" class="dropdown-divider mt-3 mb-3 border-gray-700"></li>
+        <li class="nav-item d-none admin-only-button">
+          <a href="../../pages/dashboard/dashboard.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="transactions.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                <path fill-rule="evenodd"
+                  d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text">View Sales</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="inventory-list.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text">Students</span>
+          </a>
+        </li>
+        <li class="nav-item d-none admin-only-button">
+          <a href="users-list.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z">
+                </path>
+              </svg>
+            </span>
+            <span class="sidebar-text">Users</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="settings.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text">Settings</span>
+          </a>
+        </li>
+
+        <li role="separator" class="dropdown-divider mt-2 mb-3 border-gray-700"></li>
+
+        <button class="btn btn-secondary d-inline-flex align-items-center me-2 dropdown-toggle">
+          <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+            </path>
+          </svg>
+          New Sale
+        </button>
+
+        <!-- Side navbar separator -->
+        <li role="separator" class="dropdown-divider mt-3 mb-3 border-gray-700"></li>
+        <li class="nav-item ">
+          <a class="nav-link" id="window-logout-button">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                </path>
+              </svg>
+            </span>
+            <span class="sidebar-text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-8">
+        <div class="card card-body border-0 shadow mb-4">
+          <h2 class="h2 mb-4 text-center">New Sale</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="first-name">Customer Name</label>
+                <input class="form-control" id="customer-name" type="text" placeholder="Customer Name" required>
+                <div class="invalid-feedback">
+                  Enter the customer's name
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="last-name">Payment Method</label>
+                <select name="payment-method" id="payment-method" class="form-control" required>
+                  <option value="Cash" selected>Cash</option>
+                  <option value="POS">POS</option>
+                  <option value="Bank Transfer">Bank Transfer</option>
+                </select>
+                <div class="invalid-feedback">
+                  Select payment method
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-3">
+              <div>
+                <label for="first-name">Customer Contact</label>
+                <input class="form-control" id="customer-contact" type="text"
+                  placeholder="Customer Email / Phone Number" required>
+                <div class="invalid-feedback">
+                  Email address or phone number
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="form-check mt-4 pt-3">
+                <input class="form-check-input" type="checkbox" value="" id="include-vat" checked>
+                <label class="form-check-label mb-0" for="remember">
+                  Include VAT
+                </label>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <label for="total-price">Sales Total Price</label>
+                <input class="form-control" id="total-price" type="text" placeholder="Total price of sale" required
+                  disabled>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div>
+                <label for="item-count">Sales Product Count</label>
+                <input class="form-control" id="item-count" type="number" placeholder="Total number of items" required
+                  disabled>
+              </div>
+            </div>
+          </div>
+          <div class="row m-auto mb-4">
+            <div class="autoComplete_wrapper">
+              <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+                autocapitalize="off" class="form-control">
+              <button class="btn bg-danger text-white" onclick="location.reload()"
+                style="width: 200px; margin-left: 50px;">
+                Refresh
+              </button>
+            </div>
+          </div>
+          <div id="product-popup-container">
+          </div>
+          <div>
+            <div class="my-3 mb-4">
+              <button class="btn btn-gray-800 mt-2 animate-up-2" style="width: 100%;" id="complete-sale">
+                Complete Sale
+              </button>
+              <!-- <button class="btn btn-gray-800 mt-2 animate-up-2" style="width: 100%;" data-bs-toggle="modal"
+                data-bs-target="#invoice-modal">
+                Show popup
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Invoice Modal -->
+  <div class="modal fade" id="invoice-modal" tabindex="-1" role="dialog" aria-labelledby="invoice-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-product" role="document" style="width: 200px; color: #000 !important;">
+      <div class="modal-content">
+        <div class="modal-footer justify-content-evenly mb-2">
+          <button type="submit" class="btn btn-gray-800 mr-2" id="printInvoiceButton">
+            Print Receipt
+          </button>
+          <button type="submit" class="btn btn-danger" id="close-modal" data-bs-dismiss="modal"
+            onclick="location.reload();">
+            Cancel Print
+          </button>
+        </div>
+        <div class="modal-body p-0" id="invoice-print">
+          <h3 class="text-center" style="font-weight: 400; color: #000; font-size: 20px;">Western Farms</h3>
+
+          <div class="row m-auto border mb-2">
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span id="customer-name-popup"></span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span id="customer-contact-popup"></span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span style="text-transform: uppercase;">Paid:</span>
+              <span id="sales-payment-popup"></span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span id="sales-date-popup"></span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span style="text-transform: uppercase;">ID:</span>
+              <span id="sales-id-popup"></span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title">
+              <span style="text-transform: uppercase;">Rep:</span>
+              <span id="sales-rep-popup"></span>
+            </p>
+          </div>
+
+          <div id="table-popup-data"></div>
+          <div id="receipt-summary">
+            <p class="border-primary p-1 mb-1 receipt-title"
+              style="padding: 12px 0; background-color: #F2F4F6 !important; color: #000 !important;">
+              <span style="text-transform: uppercase;">VAT (7.5%)</span>
+              <span id="vat-text-popup">₦0</span>
+            </p>
+            <p class="border-primary p-1 mb-1 receipt-title"
+              style="padding: 12px 0; background-color: #F2F4F6 !important; color: #000 !important;">
+              <span style="text-transform: uppercase;">Total</span>
+              <span id="total-text-popup">₦0</span>
+            </p>
+          </div>
+
+          <div id="legalcopy" class="mt-2">
+            <p class="text-center" style="color: #000; font-weight: 500;">
+              Thanks for your patronage!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Volt JS -->
+  <script src="../../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="../../assets/js/logout.js"></script>
+  <script src="../../assets/js/new-sale.js"></script>
+
+</body>
+
+</html>

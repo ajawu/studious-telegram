@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "student-system-database",
+            "database": "${workspaceFolder:school-attendance-system}/data.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

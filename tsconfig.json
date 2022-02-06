@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./html&css/assets/js",
+        "allowJs": false,
+        "target": "ES2021",
+        "strict": true,
+        "skipLibCheck": true,
+        "module": "commonjs"
+    },
+    "include": [
+        "./src/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

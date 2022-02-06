@@ -1,0 +1,9 @@
+Home Page
+- Show previous attendance key metrics (sort by date)
+Metrics -  total students, number present, number absent
+graph(pie) - (represent metrics)
+
+Attendance History (Sort by date)
+CRUD students
+Capture Attendance (validate check in or check out)
+Logout
